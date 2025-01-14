@@ -14,5 +14,11 @@ checkVis.addEventListener("click", () => {
 saveBtn.addEventListener("click", () => {
   console.log(input.value);
   taskarr.push(input.value);
-  console.log(taskarr);
+  savedarr();
+  taskCardCreate();
 });
+
+const savedarr = () => {
+  localStorage.setItem("SavedTasks", JSON.stringify(taskarr));
+  console.log(taskarr);
+};
