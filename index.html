@@ -9,17 +9,19 @@
   </head>
   <body>
     <main>
-      <div id="mainBox">
-        <h1 id="title">To do list</h1>
-        <div>
-          <input type="text" id="mainInput" />
-          <button id="mainButton">Save</button>
+        <div id="mainBox">
+            <h1 id="mainTxt">Todo liste</h1>
+            <div>
+                <input type="text" id="mainInput">
+                <button id="mainBtn">Lagre</button>
+            </div>
+            <div>
+                <input type="checkbox" name="visInvis" id="visInvis">
+                <label for="visInvis">Hide completed</label>
+            </div>
         </div>
-        <div>
-          <input type="checkBox" name="visInvis" id="visInvis" />
-          <label for="checkerBox">Hide completed</label>
-        </div>
-      </div>
+
+        <section id="taskCards"></section>
     </main>
-  </body>
+</body>
 </html>
