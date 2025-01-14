@@ -4,7 +4,7 @@ const checkerBox = document.querySelector("#visInvis");
 
 
 checkerBox.checked = localStorage.getItem("Hidden");
-
+let taskarr = [];
 
 checkerBox.addEventListener("click", () => {
   console.log (checkerBox.checked)
@@ -12,5 +12,7 @@ checkerBox.addEventListener("click", () => {
 });
 
 saveBtn.addEventListener("click", () => {
-  localStorage.setItem("To do list", input.value);
+    console.log(input.value);
+    taskarr.push(input.value);
+    console.log(taskarr);
 });
