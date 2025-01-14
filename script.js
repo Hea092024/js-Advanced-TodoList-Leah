@@ -32,3 +32,17 @@ const savedarr = () => {
   console.log(taskarr);
 };
 
+function taskCardCreate() {
+    tasksCont.textContent = ""
+    taskarr.forEach((e) => {
+       const div = document.createElement("div")
+       div.className = "taskBoxes"
+       const p = document.createElement("p")
+       const txt = document.createTextNode(e)
+       p.append(txt)
+       div.appendChild(p)
+       tasksCont.append(div)
+    })
+}
+
+taskCardCreate()
