@@ -6,9 +6,9 @@ const tasksCont = document.querySelector("#taskCards");
 let taskarr = [];
 checkVis.checked = localStorage.getItem("Hidden");
 
-checkerBox.addEventListener("click", () => {
-  console.log(checkerBox.checked);
-  localStorage.setItem("Hidden", checkerBox.checked);
+checkVis.addEventListener("click", () => {
+  console.log(checkVis.checked);
+  localStorage.setItem("Hidden", checkVis.checked);
 });
 
 saveBtn.addEventListener("click", () => {
