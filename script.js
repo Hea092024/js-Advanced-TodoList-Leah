@@ -11,6 +11,15 @@ checkVis.addEventListener("click", () => {
   localStorage.setItem("Hidden", checkVis.checked);
 });
 
+if (
+  localStorage.getItem("SavedTasks") !== "" &&
+  localStorage.getItem("SavedTasks") !== null
+) {
+  taskarr = JSON.parse(localStorage.getItem("SavedTasks"));
+} else {
+  console.log("local was empty");
+}
+
 saveBtn.addEventListener("click", () => {
   console.log(input.value);
   taskarr.push(input.value);
@@ -22,3 +31,4 @@ const savedarr = () => {
   localStorage.setItem("SavedTasks", JSON.stringify(taskarr));
   console.log(taskarr);
 };
+
