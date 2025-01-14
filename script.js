@@ -2,6 +2,7 @@ const saveBtn = document.querySelector("#mainBtn");
 const input = document.querySelector("#mainInput");
 const checkVis = document.querySelector("#visInvis");
 const tasksCont = document.querySelector("#taskCards");
+const clearBtn = document.querySelector("#clearBtn");
 
 let taskarr = [];
 checkVis.checked = localStorage.getItem("Hidden");
@@ -23,6 +24,12 @@ if (
 saveBtn.addEventListener("click", () => {
   console.log(input.value);
   taskarr.push(input.value);
+  savedarr();
+  taskCardCreate();
+});
+
+clearBtn.addEventListener("click", () => {
+  taskarr = [];
   savedarr();
   taskCardCreate();
 });

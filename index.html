@@ -7,21 +7,25 @@
     <script src="script.js" defer></script>
     <title>To do list</title>
   </head>
-  <body>
-    <main>
-        <div id="mainBox">
-            <h1 id="mainTxt">Todo liste</h1>
-            <div>
-                <input type="text" id="mainInput">
-                <button id="mainBtn">Lagre</button>
-            </div>
-            <div>
-                <input type="checkbox" name="visInvis" id="visInvis">
-                <label for="visInvis">Hide completed</label>
-            </div>
-        </div>
+ <body>
+  <main>
+    <div id="mainBox">
+      <h1 id="mainTxt">Todo liste</h1>
+      <div>
+        <input type="text" id="mainInput">
+        <button id="mainBtn">Save</button>
+      </div>
+      <div>
+        <input type="checkbox" name="visInvis" id="visInvis">
+        <label for="visInvis">Hide completed</label>
+      </div>
+    </div>
 
-        <section id="taskCards"></section>
-    </main>
+    <div id="taskBox">
+    <section id="taskCards"></section>
+    <button id="clearBtn">Clear Completed</button>
+    </div>
+  </main>
 </body>
+
 </html>
