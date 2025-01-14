@@ -11,3 +11,6 @@ checkerBox.addEventListener("click", () => {
    localStorage.setItem("Hidden", checkerBox.checked) 
 });
 
+saveBtn.addEventListener("click", () => {
+  localStorage.setItem("To do list", input.value);
+});
